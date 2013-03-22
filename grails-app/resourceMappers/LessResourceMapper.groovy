@@ -11,6 +11,8 @@ class LessResourceMapper {
     static phase = MapperPhase.GENERATION
     static defaultIncludes = [ '**/*.less' ]
 
+    static transactional = false
+
     GrailsApplication grailsApplication
     def lessCompilerService
 

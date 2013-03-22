@@ -7,6 +7,8 @@ class LessCompilerService {
 
     def grailsApplication
 
+    static transactional = false
+
     private String loadResource(name) {
         grailsApplication.parentContext.getResource("classpath:${name}").file.text
     }
